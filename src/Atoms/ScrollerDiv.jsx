@@ -4,8 +4,7 @@ import styled from "styled-components";
 const StyledDiv = styled.div`
     max-width: 150px;
     max-height: ${props => props.maxHeight};
-    overflow-y: scroll;
-    overflow-x: hidden;
+    overflow: auto;
 `
 const ScrollerDiv = (props) => {
     return ( 

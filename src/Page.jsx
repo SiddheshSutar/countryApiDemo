@@ -86,7 +86,7 @@ const Page = () => {
                     ))}
                 </div>
             </ScrollerDiv>
-            {isCountry ? <ScrollerDiv maxHeight = {'400px'}>
+            {isCountry ? <ScrollerDiv maxHeight = {'200px'}>
                 <div className="country-container">
                     {res.map((element, index) => (
                         <button key={index} className="country" onClick={() => setCountry(element.name)}>
