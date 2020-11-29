@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 
 const StyledDiv = styled.div`
-    max-width: 150px;
+    max-width: ${props => props.maxWidth};
     max-height: ${props => props.maxHeight};
     overflow: auto;
 `
@@ -19,5 +19,6 @@ const ScrollerDiv = (props) => {
 export default ScrollerDiv;
 
 StyledDiv.defaultProps = {
-    maxHeight: '400px'
+    maxHeight: '400px',
+    maxWidth: '150px'
 }
